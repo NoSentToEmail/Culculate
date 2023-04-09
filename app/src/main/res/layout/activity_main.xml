@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/resoltTextVie"
+        android:text="Hello World!"
+        android:textSize="44sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_Divide"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/button_Point"
+        android:text="."
+        android:background="@drawable/rounded_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       />
+
+
+    <Button
+        app:layout_constraintLeft_toRightOf="@id/button_Point"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/button_Zero"
+        android:text="0"
+        android:background ="@drawable/rounded_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        app:layout_constraintLeft_toRightOf="@id/button_Zero"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/button_Equel"
+        android:id="@+id/button_Erase"
+        android:text="R"
+        android:background ="@drawable/rounded_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+
+    <Button
+        app:layout_constraintLeft_toRightOf="@id/button_Erase"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/button_Equel"
+        android:text="="
+        android:background ="@drawable/rounded_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/button_Point"
+        android:id="@+id/button_One"
+        android:text="1"
+        android:background ="@drawable/rounded_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        app:layout_constraintLeft_toRightOf="@id/button_One"
+        app:layout_constraintBottom_toTopOf="@id/button_Zero"
+        android:id="@+id/button_Two"
+        android:text="2"
+        android:background ="@drawable/rounded_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        app:layout_constraintLeft_toRightOf="@id/button_Two"
+        app:layout_constraintBottom_toTopOf="@id/button_Erase"
+        app:layout_constraintRight_toLeftOf="@id/button_Plus"
+        android:id="@+id/button_Three"
+        android:text="3"
+        android:background ="@drawable/rounded_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        app:layout_constraintLeft_toRightOf="@id/button_Three"
+        app:layout_constraintBottom_toTopOf="@id/button_Equel"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/button_Plus"
+        android:text="+"
+        android:background ="@drawable/rounded_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/button_One"
+        android:id="@+id/button_Four"
+        android:text="4"
+        android:background ="@drawable/rounded_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        app:layout_constraintLeft_toRightOf="@id/button_Four"
+        app:layout_constraintBottom_toTopOf="@id/button_Two"
+        android:id="@+id/button_Five"
+        android:text="5"
+        android:background ="@drawable/rounded_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        app:layout_constraintLeft_toRightOf="@id/button_Five"
+        app:layout_constraintBottom_toTopOf="@id/button_Three"
+        app:layout_constraintRight_toLeftOf="@id/button_Minus"
+        android:id="@+id/button_Six"
+        android:text="6"
+        android:background ="@drawable/rounded_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        app:layout_constraintLeft_toRightOf="@id/button_Six"
+        app:layout_constraintBottom_toTopOf="@id/button_Plus"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/button_Minus"
+        android:text="-"
+        android:background ="@drawable/rounded_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/button_Four"
+        android:id="@+id/button_Seven"
+        android:text="7"
+        android:background ="@drawable/rounded_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        app:layout_constraintLeft_toRightOf="@id/button_Seven"
+        app:layout_constraintBottom_toTopOf="@id/button_Five"
+        android:id="@+id/button_Eight"
+        android:text="8"
+        android:background ="@drawable/rounded_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        app:layout_constraintLeft_toRightOf="@id/button_Eight"
+        app:layout_constraintBottom_toTopOf="@id/button_Six"
+        app:layout_constraintRight_toLeftOf="@id/button_Multiply"
+        android:id="@+id/button_Nine"
+        android:text="9"
+        android:background ="@drawable/rounded_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        app:layout_constraintLeft_toRightOf="@id/button_Nine"
+        app:layout_constraintBottom_toTopOf="@id/button_Minus"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/button_Multiply"
+        android:text="*"
+        android:background ="@drawable/rounded_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/button_Seven"
+        android:id="@+id/button_Clear"
+        android:text="Clear"
+        android:background ="@drawable/rounded_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        app:layout_constraintLeft_toRightOf="@id/button_Nine"
+        app:layout_constraintBottom_toTopOf="@id/button_Seven"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/button_Divide"
+        android:text="/"
+        android:background ="@drawable/rounded_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        app:layout_constraintLeft_toRightOf="@id/button_Seven"
+        app:layout_constraintBottom_toTopOf="@id/button_Seven"
+        app:layout_constraintRight_toLeftOf="@id/button_Divide"
+        android:id="@+id/button_History"
+        android:text="Save"
+        android:background ="@drawable/rounded_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
