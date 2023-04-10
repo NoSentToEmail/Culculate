@@ -166,5 +166,5 @@ class MainActivity : AppCompatActivity() {
         } catch (t: Throwable) {
             Toast.makeText(this@MainActivity, "Exception: $t", Toast.LENGTH_LONG)
         }
-    }
+    }//изменения хотя бы сохранит?
 }
